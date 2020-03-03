@@ -131,7 +131,6 @@ table {
   border-spacing: 0;
 }
 * {
-  background-color: black;
   font-family: 'Montserrat';
 }
 #navBar {
@@ -143,6 +142,7 @@ table {
   top: 0;
   position: fixed;
   width: 100%;
+  text-shadow: 0 1px 0 black;
 }
 #navBar h1 {
   background-color: inherit;
@@ -190,6 +190,9 @@ footer {
 footer p {
   background-color: transparent;
   font-family: 'Quicksand';
+}
+body {
+  background-color: black;
 }
 .home .intro h2 {
   padding: 15px;
@@ -324,8 +327,11 @@ footer p {
   margin-bottom: 1.5vh;
 }
 .sectionTwo {
+  background-color: black;
   display: flex;
+  height: 34vh;
   justify-content: space-around;
+  margin-bottom: 2vh;
 }
 .sectionTwo img {
   margin-left: 10%;
@@ -372,4 +378,53 @@ footer p {
   text-decoration: none;
   border-radius: 0.3em;
   transition: all 0.3s ease-out;
+}
+.thirdSection {
+  height: 34vh;
+  background-color: #8A7D53;
+  font-family: 'Montserrat';
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to top left, #8A7D53 75%, #C4C4C4 25.5%);
+}
+.thirdSection .upperRight {
+  display: flex;
+  flex-direction: row;
+}
+.thirdSection .upperRight h2 {
+  width: 100vw;
+  font-size: 2rem;
+  text-align: right;
+  margin-right: 8vw;
+  margin-top: 5vh;
+}
+.thirdSection .rowSection {
+  margin: 9vh 2vw;
+  display: flex;
+  justify-content: space-between;
+}
+.thirdSection .rowSection p {
+  font-size: 1.2rem;
+  width: 50%;
+  text-align: center;
+}
+.fourthSection {
+  height: 34vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.fourthSection .trainerImg {
+  display: flex;
+  justify-content: center;
+}
+.fourthSection .trainerImg img {
+  border-radius: 50%;
+  max-width: 50%;
+}
+.fourthSection p {
+  color: #C4C4C4;
+  text-align: justify;
+  margin: 3vh 5vw 4vh 5vw;
 }

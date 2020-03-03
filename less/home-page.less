@@ -1,24 +1,23 @@
-// Home Content
+body {
+  background-color: black;
+}
 
 .home {
-
   .intro {
-
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
   }
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    
+
     .blast {
       @media @mobile {
         margin: 0 auto;
@@ -27,7 +26,8 @@
       }
     }
 
-    .sky, .launch {
+    .sky,
+    .launch {
       @media @mobile {
         display: none;
       }
@@ -87,16 +87,14 @@
         @media @mobile {
           margin-bottom: 2.2rem;
         }
-  
       }
 
       .btn {
         .customButton();
-          @media @mobile {
-            width: 100vw;
-            height: 6vh;
-          }
-
+        @media @mobile {
+          width: 100vw;
+          height: 6vh;
+        }
       }
     }
 
@@ -110,7 +108,7 @@
         width: 100%;
         margin-top: 10px;
       }
-    
+
       img {
         width: 100%;
         height: auto;
@@ -118,7 +116,7 @@
       }
     }
   }
-}// home
+} // home
 
 .workingOutImg {
   min-width: 100%;
@@ -133,9 +131,12 @@
   margin-bottom: 1.5vh;
 }
 .sectionTwo {
+  background-color: black;
   display: flex;
-  justify-content: space-around;
+  height: 34vh;
 
+  justify-content: space-around;
+  margin-bottom: 2vh;
   img {
     margin-left: 10%;
     max-width: 20vw;
@@ -152,37 +153,85 @@
     padding: 0;
     margin-bottom: 4em;
     text-shadow: 0 1px 0 black;
-
     li:before {
-      
-        content: counter(li);
-        counter-increment: li;
-        position: absolute;
-        left: -1.3em;
-        top: 50%;
-        margin-top: -1.3em;
-        background: @darkclay;
-        height: 2em;
-        width: 2em;
-        line-height: 2em;
-        border: .3em solid @lightgrey;
-        text-align: center;
-        font-weight: bold;
-        border-radius: 2em;
-        transition: all .3s ease-out;
-      
+      content: counter(li);
+      counter-increment: li;
+      position: absolute;
+      left: -1.3em;
+      top: 50%;
+      margin-top: -1.3em;
+      background: @darkclay;
+      height: 2em;
+      width: 2em;
+      line-height: 2em;
+      border: 0.3em solid @lightgrey;
+      text-align: center;
+      font-weight: bold;
+      border-radius: 2em;
+      transition: all 0.3s ease-out;
     }
     li {
       width: 70%;
       position: relative;
       display: block;
-      padding: .4em .4em .4em 2em;
-      margin: .5em auto;
+      padding: 0.4em 0.4em 0.4em 2em;
+      margin: 0.5em auto;
       background: @darkclay;
       color: @lightgrey;
       text-decoration: none;
-      border-radius: .3em;
-      transition: all .3s ease-out;
+      border-radius: 0.3em;
+      transition: all 0.3s ease-out;
     }
+  }
+}
+
+.thirdSection {
+  height: 34vh;
+  background-color: @olivebrown;
+  font-family: @mainFont;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to top left, @olivebrown 75%, @lightgrey 25.5%);
+  .upperRight {
+    display: flex;
+    flex-direction: row;
+
+    h2 {
+      width: 100vw;
+      font-size: 2rem;
+      text-align: right;
+      margin-right: 8vw;
+      margin-top: 5vh;
+    }
+  }
+  .rowSection {
+    margin: 9vh 2vw;
+    display: flex;
+    justify-content: space-between;
+    p {
+      font-size: 1.2rem;
+      width: 50%;
+      text-align: center;
+    }
+  }
+}
+.fourthSection {
+  height: 34vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .trainerImg {
+    display: flex;
+    justify-content: center;
+    img {
+      border-radius: 50%;
+      max-width: 50%;
+    }
+  }
+  p {
+    color: @lightgrey;
+    text-align: justify;
+    margin: 3vh 5vw 4vh 5vw;
   }
 }
