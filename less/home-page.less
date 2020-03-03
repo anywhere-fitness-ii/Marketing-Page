@@ -1,145 +1,43 @@
 body {
   background-color: black;
+  font-family: @secondFont;
 }
 
-.home {
-  .intro {
-    h2 {
-      padding: 15px;
-    }
-
-    p {
-      padding: 0 15px;
-    }
-  }
-
-  .space-images {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-
-    .blast {
-      @media @mobile {
-        margin: 0 auto;
-        width: 90%;
-        margin-top: 20px;
-      }
-    }
-
-    .sky,
-    .launch {
-      @media @mobile {
-        display: none;
-      }
-    }
-
-    img {
-      width: 28%;
-      margin: 20px 2.5%;
-      border-radius: 20px;
-      height: 100%;
-    }
-  }
-
-  .visit-planets {
-    padding: 15px;
-
-    h3 {
-      margin-top: 11px;
-    }
-
-    p {
-      margin-top: 13px;
-    }
-  }
-
-  .walk {
-    margin-top: 60px;
-    border-top: 1px solid @darkclay;
-    padding: 50px 60px;
-    display: flex;
-    justify-content: center;
-
-    @media @mobile {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 4px 3px;
-      width: 90vw;
-      margin: 0 auto;
-    }
-
-    .walk-text {
-      width: 50%;
-
-      @media @mobile {
-        margin-top: 2px;
-        margin-bottom: 1px;
-        width: 100%;
-        text-align: justify;
-      }
-      h3 {
-        margin-bottom: 10px;
-      }
-
-      p {
-        margin-bottom: 26px;
-        @media @mobile {
-          margin-bottom: 2.2rem;
-        }
-      }
-
-      .btn {
-        .customButton();
-        @media @mobile {
-          width: 100vw;
-          height: 6vh;
-        }
-      }
-    }
-
-    .walk-img {
-      width: 46%;
-      margin-left: 4%;
-      @media @mobile {
-        order: -1;
-        margin-left: 0;
-        margin: 0 auto;
-        width: 100%;
-        margin-top: 10px;
-      }
-
-      img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-      }
-    }
-  }
-} // home
-
 .workingOutImg {
-  min-width: 100%;
+  max-width: 100%;
   border-radius: 7px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   background-color: black;
+  @media @mobile {
+    width: 100%;
+  }
 }
 .topSection {
   background-color: black;
   margin-bottom: 1.5vh;
+  @media @mobile {
+    
+  }
 }
 .sectionTwo {
   background-color: black;
   display: flex;
-  height: 34vh;
-
+  height: 34%;
   justify-content: space-around;
   margin-bottom: 2vh;
+  @media @mobile {
+    flex-direction: column;
+    align-content: space-around;
+    margin: 0 auto;
+  }
   img {
     margin-left: 10%;
     max-width: 20vw;
+    @media @mobile {
+    display: none;
+    }
   }
   ol {
     margin-left: 7%;
@@ -153,6 +51,11 @@ body {
     padding: 0;
     margin-bottom: 4em;
     text-shadow: 0 1px 0 black;
+    @media @mobile {
+      margin: 0 auto;
+      width: 100vw;
+      align-items: center;
+      }
     li:before {
       content: counter(li);
       counter-increment: li;
@@ -186,12 +89,18 @@ body {
 }
 
 .thirdSection {
-  height: 34vh;
+  height: 34%;
   background-color: @olivebrown;
   font-family: @mainFont;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to top left, @olivebrown 75%, @lightgrey 25.5%);
+  background: linear-gradient(to top left, @olivebrown 75%, @lightgrey 25.5%);    
+  background-color: @olivebrown;
+
+  @media @mobile {
+    margin: 0 auto;
+    align-items: center;
+    }
   .upperRight {
     display: flex;
     flex-direction: row;
@@ -208,26 +117,48 @@ body {
     margin: 9vh 2vw;
     display: flex;
     justify-content: space-between;
-    p {
+    @media @mobile {
+      flex-direction: column;
+    }
+    h4 {
       font-size: 1.2rem;
-      width: 50%;
+      width: 100%;
       text-align: center;
+      @media @mobile {
+        margin: 2% auto;
+      }
+      }
+    p {
+      font-size: 1rem;
+      width: 90%;
+      margin-top: 1vh;
+      font-family: @secondFont;
+      text-align: center;
+      @media @mobile {
+        margin-top: 1%;
+      }
+  
     }
   }
 }
 .fourthSection {
-  height: 34vh;
+  height: 34%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: @darkclay;
+  @media @mobile {
+    margin: 0 auto;
+    align-items: center;
+    }
   .trainerImg {
     display: flex;
     justify-content: center;
     img {
       border-radius: 50%;
       max-width: 50%;
+        margin-top: 3%;
     }
   }
   p {

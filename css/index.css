@@ -144,6 +144,12 @@ table {
   width: 100%;
   text-shadow: 0 1px 0 black;
 }
+@media (max-width: 500px) {
+  #navBar {
+    flex-direction: column;
+    position: relative;
+  }
+}
 #navBar h1 {
   background-color: inherit;
   width: 45%;
@@ -151,6 +157,12 @@ table {
   margin: 1.5% auto 2% 4%;
   font-family: 'Montserrat';
   color: #C4C4C4;
+}
+@media (max-width: 500px) {
+  #navBar h1 {
+    width: 100%;
+    text-align: center;
+  }
 }
 #navBar nav {
   background-color: inherit;
@@ -162,8 +174,7 @@ table {
 }
 @media (max-width: 500px) {
   #navBar nav {
-    width: 78%;
-    margin-bottom: 0.75rem;
+    width: 95%;
   }
 }
 #navBar nav a {
@@ -174,7 +185,7 @@ table {
 }
 @media (max-width: 500px) {
   #navBar nav a {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 footer {
@@ -192,134 +203,20 @@ footer p {
 }
 body {
   background-color: black;
-}
-.home .intro h2 {
-  padding: 15px;
-}
-.home .intro p {
-  padding: 0 15px;
-}
-.home .space-images {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-@media (max-width: 500px) {
-  .home .space-images .blast {
-    margin: 0 auto;
-    width: 90%;
-    margin-top: 20px;
-  }
-}
-@media (max-width: 500px) {
-  .home .space-images .sky,
-  .home .space-images .launch {
-    display: none;
-  }
-}
-.home .space-images img {
-  width: 28%;
-  margin: 20px 2.5%;
-  border-radius: 20px;
-  height: 100%;
-}
-.home .visit-planets {
-  padding: 15px;
-}
-.home .visit-planets h3 {
-  margin-top: 11px;
-}
-.home .visit-planets p {
-  margin-top: 13px;
-}
-.home .walk {
-  margin-top: 60px;
-  border-top: 1px solid #282626;
-  padding: 50px 60px;
-  display: flex;
-  justify-content: center;
-}
-@media (max-width: 500px) {
-  .home .walk {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 4px 3px;
-    width: 90vw;
-    margin: 0 auto;
-  }
-}
-.home .walk .walk-text {
-  width: 50%;
-}
-@media (max-width: 500px) {
-  .home .walk .walk-text {
-    margin-top: 2px;
-    margin-bottom: 1px;
-    width: 100%;
-    text-align: justify;
-  }
-}
-.home .walk .walk-text h3 {
-  margin-bottom: 10px;
-}
-.home .walk .walk-text p {
-  margin-bottom: 26px;
-}
-@media (max-width: 500px) {
-  .home .walk .walk-text p {
-    margin-bottom: 2.2rem;
-  }
-}
-.home .walk .walk-text .btn {
-  display: table-cell;
-  background-color: black;
-  margin: 0 10px 20px;
-  cursor: pointer;
-  width: 92px;
-  height: 30px;
-  font-size: 1.5rem;
-  font-weight: bold;
-  border-radius: 5px;
-  color: #C4C4C4;
-  text-align: center;
-  vertical-align: middle;
-}
-.home .walk .walk-text .btn:hover {
-  background-color: #C4C4C4;
-  color: black;
-}
-@media (max-width: 500px) {
-  .home .walk .walk-text .btn {
-    width: 100vw;
-    height: 6vh;
-  }
-}
-.home .walk .walk-img {
-  width: 46%;
-  margin-left: 4%;
-}
-@media (max-width: 500px) {
-  .home .walk .walk-img {
-    order: -1;
-    margin-left: 0;
-    margin: 0 auto;
-    width: 100%;
-    margin-top: 10px;
-  }
-}
-.home .walk .walk-img img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+  font-family: 'Quicksand';
 }
 .workingOutImg {
-  min-width: 100%;
+  max-width: 100%;
   border-radius: 7px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   background-color: black;
+}
+@media (max-width: 500px) {
+  .workingOutImg {
+    width: 100%;
+  }
 }
 .topSection {
   background-color: black;
@@ -328,13 +225,25 @@ body {
 .sectionTwo {
   background-color: black;
   display: flex;
-  height: 34vh;
+  height: 34%;
   justify-content: space-around;
   margin-bottom: 2vh;
+}
+@media (max-width: 500px) {
+  .sectionTwo {
+    flex-direction: column;
+    align-content: space-around;
+    margin: 0 auto;
+  }
 }
 .sectionTwo img {
   margin-left: 10%;
   max-width: 20vw;
+}
+@media (max-width: 500px) {
+  .sectionTwo img {
+    display: none;
+  }
 }
 .sectionTwo ol {
   margin-left: 7%;
@@ -348,6 +257,13 @@ body {
   padding: 0;
   margin-bottom: 4em;
   text-shadow: 0 1px 0 black;
+}
+@media (max-width: 500px) {
+  .sectionTwo ol {
+    margin: 0 auto;
+    width: 100vw;
+    align-items: center;
+  }
 }
 .sectionTwo ol li:before {
   content: counter(li);
@@ -379,12 +295,18 @@ body {
   transition: all 0.3s ease-out;
 }
 .thirdSection {
-  height: 34vh;
-  background-color: #8A7D53;
+  height: 34%;
   font-family: 'Montserrat';
   display: flex;
   flex-direction: column;
   background: linear-gradient(to top left, #8A7D53 75%, #C4C4C4 25.5%);
+  background-color: #8A7D53;
+}
+@media (max-width: 500px) {
+  .thirdSection {
+    margin: 0 auto;
+    align-items: center;
+  }
 }
 .thirdSection .upperRight {
   display: flex;
@@ -403,18 +325,46 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.thirdSection .rowSection p {
+@media (max-width: 500px) {
+  .thirdSection .rowSection {
+    flex-direction: column;
+  }
+}
+.thirdSection .rowSection h4 {
   font-size: 1.2rem;
-  width: 50%;
+  width: 100%;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .thirdSection .rowSection h4 {
+    margin: 2% auto;
+  }
+}
+.thirdSection .rowSection p {
+  font-size: 1rem;
+  width: 90%;
+  margin-top: 1vh;
+  font-family: 'Quicksand';
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .thirdSection .rowSection p {
+    margin-top: 1%;
+  }
+}
 .fourthSection {
-  height: 34vh;
+  height: 34%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #282626;
+}
+@media (max-width: 500px) {
+  .fourthSection {
+    margin: 0 auto;
+    align-items: center;
+  }
 }
 .fourthSection .trainerImg {
   display: flex;
@@ -423,6 +373,7 @@ body {
 .fourthSection .trainerImg img {
   border-radius: 50%;
   max-width: 50%;
+  margin-top: 3%;
 }
 .fourthSection p {
   color: #C4C4C4;

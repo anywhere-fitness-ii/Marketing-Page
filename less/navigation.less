@@ -10,7 +10,10 @@
     position: fixed;
     width: 100%;
     text-shadow: 0 1px 0 black;
-
+    @media @mobile {
+      flex-direction: column;
+      position: relative;
+    }
     h1 {
       background-color: inherit;
       width: 45%;
@@ -18,8 +21,9 @@
         margin: 1.5% auto 2% 4%;
         font-family: @mainFont;
         color: @textColor;
-      @media (max-width: 500px) {
-          
+        @media @mobile {
+          width: 100%;
+          text-align: center;
         }
   }
   
@@ -32,8 +36,7 @@
       align-items: center;
       font-family: @secondFont;
       @media @mobile {
-          width: 78%;
-          margin-bottom: 0.75rem;
+          width: 95%;
       }
   
       a {
@@ -43,7 +46,7 @@
         color: @lightgrey;
         font-weight: bold;
         @media @mobile {
-          font-size: 1.5rem;
+          font-size: 1.3rem;
       }
   
       }
