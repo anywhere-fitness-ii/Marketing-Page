@@ -329,6 +329,8 @@ body {
   margin: 3% 2%;
   display: flex;
   justify-content: space-between;
+  text-align: center;
+  padding: 0 3%;
 }
 @media (max-width: 500px) {
   .thirdSection .rowSection {
@@ -340,7 +342,6 @@ body {
 .thirdSection .rowSection h4 {
   font-size: 1.2rem;
   width: 100%;
-  text-align: justify;
   margin-bottom: 2%;
 }
 @media (max-width: 500px) {
@@ -352,7 +353,7 @@ body {
   font-size: 1rem;
   width: 90%;
   font-family: 'Quicksand';
-  text-align: justify;
+  text-align: center;
 }
 @media (max-width: 500px) {
   .thirdSection .rowSection p {
@@ -445,4 +446,7 @@ body {
   .aboutRow .dev {
     width: 90%;
   }
+}
+.aboutRow .dev .aboutUnique {
+  text-align: center;
 }
