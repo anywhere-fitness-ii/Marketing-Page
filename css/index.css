@@ -172,6 +172,9 @@ table {
   align-items: center;
   font-family: 'Quicksand';
 }
+#navBar nav :hover {
+  text-shadow: 0 1px 0 grey;
+}
 @media (max-width: 500px) {
   #navBar nav {
     width: 95%;
@@ -216,6 +219,7 @@ body {
 @media (max-width: 500px) {
   .workingOutImg {
     width: 100%;
+    margin-top: 1%;
   }
 }
 .topSection {
@@ -379,4 +383,63 @@ body {
   color: #C4C4C4;
   text-align: justify;
   margin: 3vh 5vw 4vh 5vw;
+}
+/* about.html */
+.aboutUs {
+  display: flex;
+  background-color: #282626;
+  flex-direction: column;
+  color: #C4C4C4;
+  align-items: space-around;
+  padding: 2% 2%;
+}
+.aboutUs h1 {
+  padding-bottom: 2%;
+  font-size: 3rem;
+  text-align: center;
+}
+.aboutRow {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 2% 1%;
+  color: #C4C4C4;
+  background-color: #282626;
+}
+.aboutRow img {
+  border-radius: 50%;
+  max-width: 50%;
+  display: block;
+  margin: 0 auto 2% auto;
+}
+@media (max-width: 500px) {
+  .aboutRow img {
+    margin-top: 7%;
+    margin-bottom: 0%;
+  }
+}
+@media (max-width: 500px) {
+  .aboutRow {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.aboutRow h2 {
+  text-align: center;
+  font-family: 'Montserrat';
+  margin-bottom: 2%;
+  font-size: 1.1rem;
+}
+@media (max-width: 500px) {
+  .aboutRow h2 {
+    padding-top: 2%;
+  }
+}
+.aboutRow .dev {
+  width: 30%;
+}
+@media (max-width: 500px) {
+  .aboutRow .dev {
+    width: 90%;
+  }
 }

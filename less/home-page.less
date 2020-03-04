@@ -12,13 +12,13 @@ body {
   background-color: black;
   @media @mobile {
     width: 100%;
+    margin-top: 1%;
   }
 }
 .topSection {
   background-color: black;
   margin-bottom: 1.5vh;
   @media @mobile {
-    
   }
 }
 .sectionTwo {
@@ -36,7 +36,7 @@ body {
     margin-left: 10%;
     max-width: 20vw;
     @media @mobile {
-    display: none;
+      display: none;
     }
   }
   ol {
@@ -55,7 +55,7 @@ body {
       margin: 0 auto;
       width: 100vw;
       align-items: center;
-      }
+    }
     li:before {
       content: counter(li);
       counter-increment: li;
@@ -94,13 +94,13 @@ body {
   font-family: @mainFont;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to top left, @olivebrown 75%, @lightgrey 25.5%);    
+  background: linear-gradient(to top left, @olivebrown 75%, @lightgrey 25.5%);
   background-color: @olivebrown;
 
   @media @mobile {
     margin: 0 auto;
     align-items: center;
-    }
+  }
   .upperRight {
     display: flex;
     flex-direction: row;
@@ -127,7 +127,7 @@ body {
       @media @mobile {
         margin: 2% auto;
       }
-      }
+    }
     p {
       font-size: 1rem;
       width: 90%;
@@ -137,7 +137,6 @@ body {
       @media @mobile {
         margin-top: 1%;
       }
-  
     }
   }
 }
@@ -151,14 +150,14 @@ body {
   @media @mobile {
     margin: 0 auto;
     align-items: center;
-    }
+  }
   .trainerImg {
     display: flex;
     justify-content: center;
     img {
       border-radius: 50%;
       max-width: 50%;
-        margin-top: 3%;
+      margin-top: 3%;
     }
   }
   p {
@@ -167,3 +166,59 @@ body {
     margin: 3vh 5vw 4vh 5vw;
   }
 }
+
+/* about.html */
+
+.aboutUs {
+  display: flex;
+  background-color: @darkclay;
+  flex-direction: column;
+  color: @lightgrey;
+  align-items: space-around;
+  padding: 2% 2%;
+  h1 {
+    padding-bottom: 2%;
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+
+.aboutRow {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 2% 1%;
+  color: @lightgrey;
+  background-color: @darkclay;
+  img {
+    border-radius: 50%;
+    max-width: 50%;
+    display: block;
+    margin: 0 auto 2% auto;
+    @media @mobile {
+    margin-top: 7%;
+    margin-bottom: 0%;
+    }
+  }
+  @media @mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+  h2 {
+    text-align: center;
+    font-family: @mainFont;
+    margin-bottom: 2%;
+    font-size: 1.1rem;
+    @media @mobile {
+      padding-top: 2%;
+    }
+  
+  }
+  .dev {
+    width: 30%;
+    @media @mobile {
+      width: 90%;
+    }
+  }
+}
+
