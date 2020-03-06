@@ -1,0 +1,236 @@
+body {
+  background-color: black;
+  font-family: @secondFont;
+}
+
+.workingOutImg {
+  max-width: 100%;
+  border-radius: 7px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  @media @mobile {
+    width: 100%;
+    margin-top: 1%;
+  }
+}
+.topSection {
+  background-color: black;
+  margin-bottom: 1.5vh;
+  @media @mobile {
+  }
+}
+.sectionTwo {
+  background-color: black;
+  display: flex;
+  height: 34%;
+  justify-content: space-around;
+  margin-bottom: 2vh;
+  @media @mobile {
+    flex-direction: column;
+    align-content: space-around;
+    margin: 0 auto;
+  }
+  img {
+    margin-left: 10%;
+    max-width: 20vw;
+    @media @mobile {
+      display: none;
+    }
+  }
+  ol {
+    margin-left: 7%;
+    width: 70vw;
+    color: @lightgrey;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    counter-reset: li;
+    font: 15px @mainFont;
+    padding: 0;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 black;
+    @media @mobile {
+      margin: 0 auto;
+      width: 100vw;
+      align-items: center;
+    }
+    li:before {
+      content: counter(li);
+      counter-increment: li;
+      position: absolute;
+      left: -1.3em;
+      top: 50%;
+      margin-top: -1.3em;
+      background: @darkclay;
+      height: 2em;
+      width: 2em;
+      line-height: 2em;
+      border: 0.3em solid @lightgrey;
+      text-align: center;
+      font-weight: bold;
+      border-radius: 2em;
+      transition: all 0.3s ease-out;
+    }
+    li {
+      width: 70%;
+      position: relative;
+      display: block;
+      padding: 0.4em 0.4em 0.4em 2em;
+      margin: 0.5em auto;
+      background: @darkclay;
+      color: @lightgrey;
+      text-decoration: none;
+      border-radius: 0.3em;
+      transition: all 0.3s ease-out;
+    }
+  }
+}
+
+.thirdSection {
+  height: 34%;
+  background-color: @olivebrown;
+  font-family: @mainFont;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to top left, @olivebrown 75%, @lightgrey 25.5%);
+  background-color: @olivebrown;
+
+  @media @mobile {
+    margin: 0 auto;
+    align-items: center;
+  }
+  .upperRight {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    h2 {
+      width: 100vw;
+      font-size: 2rem;
+      text-align: center;
+      margin-top: 5%;
+      padding-top: 2%;
+
+    }
+  }
+  .rowSection {
+    margin: 3% 2%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0 3%;
+    @media @mobile {
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 5%;
+    }
+    h4 {
+      font-size: 1.2rem;
+      width: 100%;
+      margin-bottom: 2%;
+      @media @mobile {
+        margin: 4% auto 2% auto;
+      }
+
+    }
+    p {
+      font-size: 1rem;
+      width: 90%;
+      font-family: @secondFont;
+      text-align: center;
+      @media @mobile {
+        margin-top: 1%;
+      }
+    
+    }
+
+  }
+}
+.fourthSection {
+  height: 34%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: @darkclay;
+  @media @mobile {
+    margin: 0 auto;
+    align-items: center;
+  }
+  .trainerImg {
+    display: flex;
+    justify-content: center;
+    img {
+      border-radius: 50%;
+      max-width: 50%;
+      margin-top: 3%;
+    }
+  }
+  p {
+    color: @lightgrey;
+    text-align: justify;
+    margin: 3vh 5vw 4vh 5vw;
+  }
+}
+
+/* about.html */
+
+.aboutUs {
+  display: flex;
+  background-color: @darkclay;
+  flex-direction: column;
+  color: @lightgrey;
+  align-items: space-around;
+  padding: 2% 2%;
+  h1 {
+    padding-bottom: 2%;
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+
+.aboutRow {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 2% 1%;
+  color: @lightgrey;
+  background-color: @darkclay;
+
+  img {
+    border-radius: 50%;
+    max-width: 50%;
+    display: block;
+    margin: 0 auto 2% auto;
+    @media @mobile {
+    margin-top: 7%;
+    margin-bottom: 0%;
+    }
+  }
+  @media @mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+  h2 {
+    text-align: center;
+    font-family: @mainFont;
+    margin-bottom: 2%;
+    font-size: 1.1rem;
+    @media @mobile {
+      padding-top: 2%;
+    }
+  
+  }
+  .dev {
+    width: 30%;
+    @media @mobile {
+      width: 90%;
+    }
+    .aboutUnique {
+      text-align: center;
+    }
+    
+  }
+}
+
